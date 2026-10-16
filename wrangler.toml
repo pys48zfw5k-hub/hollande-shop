@@ -1,0 +1,8 @@
+name = "hollande-shop"
+compatibility_date = "2026-10-16"
+pages_build_output_dir = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hollande-shop-orders"
+database_id = "REMPLACER_PAR_ID_D1"

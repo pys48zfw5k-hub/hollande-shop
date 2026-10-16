@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hollande Shop — L'élégance, naturellement.</title>
+<meta name="description" content="Hollande Shop — boutique en ligne élégante. Découvrez notre sélection premium.">
+<style>
+:root{--ink:#18231d;--muted:#737a72;--cream:#f7f5ef;--paper:#fffefa;--gold:#b79a61;--line:#e7e3d9;--green:#263c30}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,sans-serif}button,input,select{font:inherit}button{cursor:pointer}
+.topline{background:var(--green);color:#f8f4e9;text-align:center;padding:10px 16px;font-size:11px;letter-spacing:1.7px;text-transform:uppercase}
+header{display:flex;align-items:center;justify-content:space-between;padding:23px 5.5%;border-bottom:1px solid var(--line);background:var(--paper);gap:20px}
+.logo{font-family:Georgia,serif;font-size:27px;letter-spacing:2px;font-weight:600}.logo span{color:var(--gold)}
+nav{display:flex;gap:28px}nav a{color:var(--ink);text-decoration:none;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.header-actions{display:flex;gap:10px;align-items:center}.iconbtn{border:1px solid var(--line);background:transparent;padding:10px 13px;border-radius:30px;font-size:12px}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:540px;background:#e8e7dd}
+.hero-copy{padding:80px 8% 70px 11%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8b7447;font-weight:bold}
+h1{font:normal clamp(43px,5.1vw,72px)/1.03 Georgia,serif;letter-spacing:-1.5px;margin:22px 0}.hero p{font-size:14px;line-height:1.9;color:#60685f;max-width:400px}
+.primary{background:var(--green);color:white;border:0;padding:16px 24px;letter-spacing:1px;text-transform:uppercase;font-size:11px;margin-top:20px}.primary:hover{background:#3c5847}
+.hero-image{position:relative;min-height:400px;overflow:hidden;background:linear-gradient(145deg,#c5c4b4,#8b9885 58%,#566b59)}
+.hero-image:before{content:"";position:absolute;width:43%;height:65%;left:29%;top:16%;background:linear-gradient(90deg,#b8a27e,#e5d6b9 40%,#9b8664);border-radius:45% 45% 18% 18%;transform:rotate(-5deg);box-shadow:25px 28px 55px #37453b55}
+.hero-image:after{content:"H";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:italic 170px Georgia,serif;color:#f5ead6;opacity:.75}
+.hero-caption{position:absolute;bottom:25px;left:25px;color:white;font:italic 16px Georgia,serif;letter-spacing:1px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 7%;background:var(--paper);border-bottom:1px solid var(--line);gap:12px}
+.trust div{text-align:center;font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:#62695f}.trust strong{display:block;font-size:12px;color:var(--ink);margin-bottom:6px}
+.section{padding:70px 5.5%}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px;gap:20px}.section h2{font:normal clamp(30px,3vw,43px) Georgia,serif;margin:10px 0 0}.sub{color:var(--muted);font-size:13px;line-height:1.7}
+.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;border-radius:25px;padding:9px 15px;font-size:11px}.filter.active{background:var(--green);color:white;border-color:var(--green)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:var(--paper);border:1px solid #eeebe3;position:relative}.product-art{height:250px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.art1{background:#d7d8ce}.art2{background:#e4d8c9}.art3{background:#c8d0c4}.art4{background:#ddd8cf}
+.product-art .shape{width:100px;height:150px;border-radius:14px 14px 22px 22px;background:linear-gradient(90deg,#29382f,#586a56 45%,#26352c);box-shadow:18px 20px 25px #0002;position:relative}
+.art2 .shape{width:110px;height:115px;border-radius:50% 50% 15px 15px;background:linear-gradient(90deg,#d0bda3,#f4e8d3,#c5ae91)}
+.art3 .shape{width:135px;height:75px;border-radius:8px;background:linear-gradient(130deg,#b59a6d,#ead6aa,#9e8053);transform:rotate(-9deg)}
+.art4 .shape{width:95px;height:145px;border-radius:7px 7px 20px 20px;background:linear-gradient(90deg,#8b6e51,#d5b58c,#846649)}
+.tag{position:absolute;top:13px;left:13px;background:#f8f5ec;padding:7px 9px;font-size:9px;letter-spacing:1px;text-transform:uppercase}
+.product-info{padding:18px}.category{color:#8a7855;font-size:9px;letter-spacing:1.6px;text-transform:uppercase}.product h3{font:normal 19px Georgia,serif;margin:9px 0}.desc{font-size:11px;color:var(--muted);min-height:30px}.price-row{display:flex;justify-content:space-between;align-items:center;margin-top:17px}.price{font-size:13px;font-weight:bold}.add{border:1px solid var(--line);border-radius:50%;width:34px;height:34px;background:transparent;font-size:20px}.add:hover{background:var(--green);color:white}
+.banner{margin:0 5.5% 70px;background:var(--green);color:#f9f4e8;padding:48px 6%;display:flex;justify-content:space-between;align-items:center;gap:24px}.banner h2{font:normal clamp(27px,3vw,40px) Georgia,serif;margin:10px 0}.banner p{font-size:12px;color:#d2d7cc;line-height:1.8;max-width:450px}.banner .primary{background:#d7c295;color:#1c2b21}
+footer{padding:45px 5.5%;background:#eae8df;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.foot-note{max-width:340px;color:var(--muted);font-size:12px;line-height:1.8}.copyright{font-size:10px;color:var(--muted);letter-spacing:1px;align-self:end}
+.overlay{position:fixed;inset:0;background:#0007;z-index:9;display:none}.overlay.open{display:block}.drawer{position:fixed;z-index:10;right:0;top:0;height:100%;width:min(430px,100%);background:var(--paper);padding:25px;transform:translateX(105%);transition:.25s;overflow:auto}.drawer.open{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer h2{font:normal 28px Georgia,serif}.close{border:1px solid var(--line);background:transparent;border-radius:50%;width:36px;height:36px}.cart-item{display:flex;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid var(--line);font-size:13px}.cart-item small{display:block;color:var(--muted);margin-top:6px}.qty{display:flex;align-items:center;gap:8px;margin-top:8px}.qty button{border:1px solid var(--line);background:white;width:24px;height:24px}.total{display:flex;justify-content:space-between;margin:22px 0;font-weight:bold}.checkout{width:100%;margin:0}.modal{display:none;position:fixed;inset:0;z-index:12;background:#0008;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-card{background:var(--paper);width:min(520px,100%);padding:28px;max-height:92vh;overflow:auto}.modal-card h2{font:normal 29px Georgia,serif}.field{display:block;margin:14px 0;font-size:11px;letter-spacing:.5px}.field input,.field select{width:100%;padding:13px;border:1px solid var(--line);background:white;margin-top:7px}.payment-note{background:#f1eee5;padding:13px;font-size:12px;line-height:1.7;color:#5f675e}.empty{text-align:center;padding:45px 10px;color:var(--muted);font-size:13px}
+@media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:60px 8%}.hero-image{min-height:340px}.products{grid-template-columns:repeat(2,1fr)}.product-art{height:210px}.section-head{align-items:flex-start;flex-direction:column}.banner{align-items:flex-start;flex-direction:column}.trust{padding:20px 4%}.trust div{font-size:9px}}
+@media(max-width:430px){header{padding:18px 5%}.logo{font-size:22px}.iconbtn{padding:9px}.products{gap:10px}.product-info{padding:13px}.product-art{height:170px}.product h3{font-size:17px}.section{padding:50px 4%}.hero-copy{padding:50px 7%}.trust{grid-template-columns:1fr;gap:14px}.trust div{display:flex;justify-content:center;gap:7px}.trust strong{margin:0}}
+</style>
+</head>
+<body>
+<div class="topline">L'élégance dans chaque détail · Livraison à Abidjan · Stock confirmé avant paiement</div>
+<header>
+  <div class="logo">HOLLANDE <span>SHOP</span></div>
+  <nav><a href="#accueil">Accueil</a><a href="#collection">Collection</a><a href="#maison">Notre maison</a></nav>
+  <div class="header-actions"><button class="iconbtn" id="cartBtn" aria-label="Ouvrir le panier">Panier (<span id="cartCount">0</span>)</button></div>
+</header>
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-copy"><div class="eyebrow">Collection signature · 2026</div><h1>Le luxe est<br>dans le détail.</h1><p>Des pièces choisies avec soin, une allure intemporelle et une expérience d'achat pensée pour vous.</p><button class="primary" onclick="document.querySelector('#collection').scrollIntoView({behavior:'smooth'})">Découvrir la collection&nbsp; ↗</button></div>
+  <div class="hero-image" role="img" aria-label="Visuel artistique de la collection Hollande Shop"><div class="hero-caption">L'art de choisir autrement.</div></div>
+</section>
+<div class="trust"><div><strong>✧ Sélection soignée</strong>Des essentiels choisis</div><div><strong>◇ Paiement sécurisé</strong>Options selon disponibilité</div><div><strong>↗ Service client</strong>À votre écoute</div></div>
+<section class="section" id="collection">
+  <div class="section-head"><div><div class="eyebrow">À découvrir</div><h2>La sélection Hollande</h2><p class="sub">Une sélection premium pour affirmer votre style.</p></div><div class="filters"><button class="filter active" data-filter="all">Tout</button><button class="filter" data-filter="vetements">Vêtements</button><button class="filter" data-filter="chaussures">Chaussures</button><button class="filter" data-filter="sacs">Sacs</button></div></div>
+  <div class="products" id="products"></div>
+</section>
+<section class="banner" id="maison"><div><div class="eyebrow" style="color:#d6c18e">L'expérience Hollande</div><h2>Le beau, sans compromis.</h2><p>Nous croyons aux belles matières, aux choix réfléchis et aux objets qui donnent du caractère au quotidien.</p></div><button class="primary" onclick="document.querySelector('#collection').scrollIntoView({behavior:'smooth'})">Explorer les pièces</button></section>
+</main>
+<footer><div><div class="logo">HOLLANDE <span>SHOP</span></div><p class="foot-note">Une boutique au goût de l'essentiel. Contactez-nous pour confirmer les disponibilités, la livraison et les moyens de paiement.</p></div><div class="foot-note"><strong>Service client & commandes</strong><br>WhatsApp : <a href="https://wa.me/2250566551259" target="_blank" rel="noopener">+225 05 66 55 12 59</a><br>Livraison actuellement limitée à Abidjan.<br><small>Stock fournisseur à confirmer avant paiement.</small></div><div class="copyright">© 2026 HOLLANDE SHOP · TOUS DROITS RÉSERVÉS</div></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Votre panier"><div class="drawer-head"><h2>Votre panier</h2><button class="close" id="closeCart" aria-label="Fermer">×</button></div><div id="cartItems"></div><div id="cartBottom"></div></aside>
+<div class="modal" id="checkoutModal"><div class="modal-card"><div class="drawer-head"><h2>Finaliser la commande</h2><button class="close" id="closeCheckout" aria-label="Fermer">×</button></div><p class="sub">Comme les articles viennent de fournisseurs, nous vérifions leur disponibilité avant de confirmer votre commande. La livraison est actuellement limitée à Abidjan.</p>
+<form id="checkoutForm"><label class="field">Nom complet<input required name="name" placeholder="Votre nom"></label><label class="field">Téléphone<input required name="phone" type="tel" placeholder="+225 07 00 00 00 00"></label><label class="field">Ville / commune<input required name="city" placeholder="Ex. Abidjan, Cocody"></label><label class="field">Moyen de paiement<select name="payment" required><option value="">Choisir un moyen</option><option>Orange Money</option><option>MTN MoMo</option><option>Wave</option><option>Moov Money</option><option>Paiement à la livraison (si disponible)</option></select></label><label class="field">Précisions de livraison (facultatif)<input name="address" placeholder="Quartier, repère…"></label><div class="payment-note"><strong>Étape 1 — disponibilité :</strong> envoyez votre demande à Hollande Shop sur WhatsApp. Nous confirmerons le stock fournisseur, la taille/couleur si applicable, et les frais de livraison à Abidjan. <br><strong>Étape 2 — paiement :</strong> une fois le stock confirmé, utilisez le lien de paiement fourni par la boutique (Wave / Mobile Money selon disponibilité).</div><button class="primary checkout" type="submit">Vérifier sur WhatsApp</button><p id="checkoutError" class="sub" role="status"></p></form><div id="orderResult"></div></div></div>
+<script>
+const products=[
+{id:1,name:"Sac Héritage",category:"sacs",label:"Best-seller",desc:"Un essentiel raffiné au quotidien.",price:28500,art:"art1"},
+{id:2,name:"Chemise Lin Signature",category:"vetements",label:"Édition choisie",desc:"Une coupe nette, un confort naturel.",price:18000,art:"art2"},
+{id:3,name:"Sneakers Élégance",category:"chaussures",label:"Intemporel",desc:"Le confort rencontre une silhouette épurée.",price:32500,art:"art3"},
+{id:4,name:"Sac Ambre",category:"sacs",label:"Nouveauté",desc:"Une pièce chic pour vos sorties.",price:22000,art:"art4"}
+];
+let cart={};let filter="all";
+const money=n=>new Intl.NumberFormat('fr-FR').format(n)+" FCFA";
+function renderProducts(){document.getElementById('products').innerHTML=products.filter(p=>filter==='all'||p.category===filter).map(p=>`<article class="product"><div class="product-art ${p.art}"><span class="tag">${p.label}</span><div class="shape"></div></div><div class="product-info"><div class="category">${p.category}</div><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" onclick="addToCart(${p.id})" aria-label="Ajouter ${p.name} au panier">+</button></div></div></article>`).join('')}
+function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart();openCart()}
+function count(){return Object.values(cart).reduce((a,b)=>a+b,0)}
+function total(){return products.reduce((s,p)=>s+p.price*(cart[p.id]||0),0)}
+function renderCart(){document.getElementById('cartCount').textContent=count();const items=document.getElementById('cartItems');if(!count()){items.innerHTML='<div class="empty">Votre panier est encore vide.<br>Ajoutez une pièce qui vous ressemble.</div>';document.getElementById('cartBottom').innerHTML='';return}
+items.innerHTML=products.filter(p=>cart[p.id]).map(p=>`<div class="cart-item"><div><strong>${p.name}</strong><small>${money(p.price)} · ${money(p.price*cart[p.id])}</small><div class="qty"><button onclick="changeQty(${p.id},-1)">−</button><span>${cart[p.id]}</span><button onclick="changeQty(${p.id},1)">+</button></div></div><button class="close" onclick="removeItem(${p.id})" aria-label="Retirer">×</button></div>`).join('');
+document.getElementById('cartBottom').innerHTML=`<div class="total"><span>Sous-total</span><span>${money(total())}</span></div><p class="sub">Les frais de livraison seront confirmés avant validation.</p><button class="primary checkout" onclick="openCheckout()">Continuer vers le paiement</button>`}
+function changeQty(id,n){cart[id]=Math.max(0,(cart[id]||0)+n);if(!cart[id])delete cart[id];renderCart()}
+function removeItem(id){delete cart[id];renderCart()}
+function openCart(){document.getElementById('overlay').classList.add('open');document.getElementById('drawer').classList.add('open')}
+function closeCart(){document.getElementById('overlay').classList.remove('open');document.getElementById('drawer').classList.remove('open')}
+function openCheckout(){closeCart();document.getElementById('checkoutModal').classList.add('open')}
+function closeCheckout(){document.getElementById('checkoutModal').classList.remove('open')}
+document.getElementById('cartBtn').onclick=openCart;document.getElementById('closeCart').onclick=closeCart;document.getElementById('overlay').onclick=closeCart;document.getElementById('closeCheckout').onclick=closeCheckout;
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;renderProducts()}));
+document.getElementById('checkoutForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!count()) return;
+ const f=new FormData(e.target);
+ const lines=products.filter(p=>cart[p.id]).map(p=>`• ${p.name} x${cart[p.id]} — ${money(p.price*cart[p.id])}`).join('\n');
+ const message=`Bonjour Hollande Shop ! Je souhaite vérifier la disponibilité de ces articles :\n${lines}\nSous-total indicatif : ${money(total())}\n\nNom : ${f.get('name')}\nTéléphone : ${f.get('phone')}\nCommune à Abidjan : ${f.get('city')}\nAdresse / repère : ${f.get('address')||'À préciser'}\nMoyen de paiement souhaité : ${f.get('payment')||'À confirmer'}\n\nMerci de confirmer le stock fournisseur, les variantes disponibles et les frais de livraison avant paiement.`;
+ const url='https://wa.me/2250566551259?text='+encodeURIComponent(message);
+ window.open(url,'_blank','noopener');
+});
+renderProducts();renderCart();
+</script>
+<a href="https://wa.me/2250566551259?text=Bonjour%20Hollande%20Shop%2C%20je%20souhaite%20des%20informations%20sur%20vos%20produits." target="_blank" rel="noopener" aria-label="Contacter Hollande Shop sur WhatsApp" style="position:fixed;right:18px;bottom:18px;z-index:8;background:#1f6b43;color:white;padding:13px 17px;border-radius:28px;text-decoration:none;font-size:12px;box-shadow:0 5px 20px #0002">WhatsApp · Commander</a>
+</body></html>
